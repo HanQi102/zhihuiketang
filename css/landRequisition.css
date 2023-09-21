@@ -1,0 +1,346 @@
+.nav ul>li:nth-of-type(4) a {
+    color: rgb(100, 100, 238) !important;
+}
+
+/* 向上动画 */
+.contentDiv2,
+.contentDiv1 {
+    animation: contentDiv2 1s forwards;
+}
+
+@keyframes contentDiv2 {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(-100px);
+    }
+}
+
+/* 背景图片 */
+.mainImg {
+    width: 100%;
+    min-width: 1200px;
+    height: 492px;
+    background-image: url(../img/aboutUsBg.png);
+    background-repeat: no-repeat;
+    padding-top: 80px;
+    overflow: hidden;
+}
+
+/* 版心 */
+.content {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    top: 0;
+}
+
+
+/* 右边图片 */
+.contentDiv1 {
+    width: 712px;
+    height: 496px;
+    background: url(../img/aboutUsIMG.png);
+    position: absolute;
+    top: -450px;
+    right: -150px;
+    overflow: hidden;
+}
+
+.contentDiv1>img {
+    /* width: 500px;
+    height: 465px; */
+    position: absolute;
+    top: 0;
+    left: -120px;
+}
+
+/* 左边 以技术驱动业务 */
+.contentDiv2 {
+    position: absolute;
+    top: -300px;
+    left: 0px;
+}
+
+.contentDiv2>h1 {
+    font-size: 50px;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.contentDiv2>p {
+    color: white;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+
+.contentDiv2>a>div {
+    width: 90px;
+    height: 36px;
+    color: white;
+    font-size: 16px;
+    line-height: 36px;
+    text-align: center;
+    margin-top: 10px;
+    border: 1px solid white;
+}
+
+.contentDiv2>a>div:hover {
+    background-color: rgba(255, 255, 255, 0.367);
+}
+
+/* 四个图标 */
+.contentDiv3>.contentDiv0 {
+    text-align: center;
+    font-size: 32px;
+    margin-top: 64px;
+}
+
+.item1 {
+    width: 240px;
+    height: 112px;
+    float: left;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 80px;
+}
+
+.item1:first-child {
+    margin-left: 0px;
+}
+
+.item1 img {
+    width: 47px;
+    height: 47px;
+    margin-bottom: 18px;
+    display: block;
+    transform: translateX(96px);
+}
+
+
+.item1 img:nth-of-type(2) {
+    display: none;
+}
+
+.item1:hover img:nth-of-type(2) {
+    display: block;
+}
+
+.item1:hover img:nth-of-type(1) {
+    display: none;
+}
+
+.icon>img:nth-of-type(1) {
+    display: none;
+}
+
+.icon>img:nth-of-type(2) {
+    display: block;
+}
+
+
+/* 鼠标悬浮图标向上过渡 */
+.item1>div {
+    width: 240px;
+    height: 65px;
+    transition: all .5s ease;
+}
+
+.item1:hover div {
+    transform: translateY(-10px);
+}
+
+.item1:hover p {
+    color: #3391e8;
+}
+
+.active {
+    border-bottom: 3px solid #3391e8;
+}
+
+.active1 {
+    animation: active 1s;
+}
+
+@keyframes active {
+    0% {
+
+        /* transform: rotateX(0); */
+    }
+
+    50% {
+        opacity: 0.3;
+        transform: rotateX(90deg);
+    }
+
+    100% {
+        opacity: 1;
+        /* transform: rotateX(0); */
+    }
+}
+
+.contentDiv4 {
+    width: 1200px;
+    overflow: hidden;
+    background-color: #F1F7FD;
+}
+
+.contentDiv4>.item2>ul {
+    height: 80px;
+}
+
+.contentDiv4>.item2>ul>li {
+    float: left;
+    line-height: 80px;
+    margin-left: 55px;
+    font-size: 14px;
+    color: #4d4d4d;
+}
+
+.contentDiv4>.item2 {
+    float: left;
+    display: none;
+}
+
+.contentDiv4>.item2:first-child {
+    display: block;
+}
+
+/* 了解智慧征地平台 */
+.contentDiv5 {
+    height: 407px;
+    padding: 76px 0 32px 0;
+    background-color: #F8FBFE;
+}
+
+.contentDiv5Left {
+    width: 360px;
+    height: 424px;
+    float: left;
+}
+
+.contentDiv5Left>h1 {
+    margin-bottom: 32px;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.sportsD1 {
+    width: 388px;
+    height: 260px;
+    background: url(../img/LandBg1.5a33e3f5.png) no-repeat;
+    background-size: 100%;
+    margin-top: 32px;
+    margin-left: 50px
+}
+
+.sportsD1>img {
+    width: 106px;
+    height: 110px;
+    margin-left: 240px;
+    transition: all 0.5s;
+}
+
+.sportsD1:hover img {
+    transform: translateY(-20px);
+}
+
+/* 智慧征地平台介绍 */
+.contentDiv5Right {
+    width: 720px;
+    float: right;
+    padding-top: 100px;
+}
+
+.contentDiv5Right>.p {
+    font-size: 24px;
+    margin-bottom: 16px
+}
+
+.contentDiv5Right>p:nth-of-type(2) {
+    margin: 28px 0 16px 0;
+}
+
+.contentDiv5Right>.a {
+    color: #29a1e2;
+    text-decoration: underline;
+}
+
+.contentDiv5Right>.span {
+    font-size: 14px;
+    line-height: 28px;
+}
+
+.contentDiv6 {
+    width: 100%;
+    height: 624px;
+    min-width: 1200px;
+    background: url(../img/b1.f29e9bb4.png);
+    background-size: cover;
+}
+
+
+.contentDiv7 {
+    width: 1200px;
+    height: 462px;
+    margin: 0 auto;
+
+}
+
+.contentDiv7>.left {
+    width: 471px;
+    height: 336px;
+    color: #666666;
+    float: left;
+    margin-top: 50px;
+}
+
+.contentDiv7>.left>p {
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+
+.contentDiv7>.left>span {
+    display: block;
+    margin-bottom: 30px;
+    line-height: 28px;
+}
+
+.contentDiv7>.right {
+    width: 729px;
+    height: 215px;
+    margin-top: 121px;
+    color: #666666;
+    float: left;
+}
+
+.contentDiv7>.right>p {
+    font-size: 24px;
+}
+
+.contentDiv7>.right>span {
+    display: block;
+    font-size: 14px;
+    margin: 25px 0;
+}
+
+.contentDiv7>.right>a {
+    display: block;
+    width: 88px;
+    border: 1px solid #666666;
+    text-align: center;
+    line-height: 28px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #666666;
+}
+
+.contentDiv7>.right>a:hover {
+    background-color: rgba(0, 0, 0, 0.322);
+}

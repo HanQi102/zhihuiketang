@@ -1,0 +1,512 @@
+/* 轮播图 */
+.swiper1 {
+    /* 分页器颜色 */
+    /* --swiper-pagination-color: #e0e0e0; */
+    /* 设置Swiper风格 */
+    --swiper-navigation-color: #f5f5f5;
+    /* 单独设置按钮颜色 */
+    --swiper-navigation-size: 15px;
+    /* 设置按钮大小 */
+}
+
+.swiper2 {
+    --swiper-theme-color: #ff6600;
+    /* 设置Swiper风格 */
+    --swiper-navigation-color: #ffffff;
+    /* 单独设置按钮颜色 */
+    --swiper-navigation-size: 40px;
+    /* 设置按钮大小 */
+}
+
+
+.swiper-slide>.div1 {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+}
+
+.swiper-slide>.div1>h1 {
+    font-size: 50px;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.swiper-slide>.div1>p {
+    color: white;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+.swiper-slide>.div1>a>div {
+    width: 64px;
+    height: 28px;
+    color: white;
+    font-size: 12px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: 10px;
+    border: 1px solid white;
+}
+
+.swiper-slide>.div1>a>div:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* 设置控住方向箭头样式 */
+.swiper1>.swiper-button-prev {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.swiper1>.swiper-button-next {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+/* 箭头悬浮显示 */
+.swiper1 .hide {
+    opacity: 0;
+    transition: all .5s;
+}
+
+.swiper1:hover .swiper-button-next {
+    opacity: 1;
+    transition: all .5s;
+    transform: translateX(-10px);
+}
+
+.swiper1:hover .swiper-button-prev {
+    opacity: 1;
+    transition: all .5s;
+    transform: translateX(10px);
+}
+
+/* 分页器设置长条 */
+.swiper .my-bullet {
+    display: inline-block;
+    width: 30px;
+    height: 2px;
+    margin-left: 8px;
+    background-color: #ccd8e36d;
+
+}
+
+.swiper .my-bullet-active {
+    background-color: white;
+}
+
+
+/* 中间 */
+.header1 {
+    width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.header1>.divUl1 {
+    width: 100%;
+    height: 210px;
+}
+
+.header1>.divUl1>div {
+    width: 140px;
+    height: 100px;
+    float: left;
+    margin: 60px 45px 0 45px;
+}
+
+.item1 {
+    width: 240px;
+    height: 112px;
+    float: left;
+    text-align: center;
+    margin-top: 18px;
+}
+
+.item1 img {
+    width: 47px;
+    height: 47px;
+    margin-bottom: 18px;
+}
+
+.item1 img:nth-of-type(2) {
+    display: none;
+    transform: translateX(49px);
+}
+
+.item1:hover img:nth-of-type(2) {
+    display: block;
+}
+
+.item1:hover img:nth-of-type(1) {
+    display: none;
+}
+
+/* 鼠标悬浮图标向上过渡 */
+.item1>div {
+    width: 145px;
+    height: 65px;
+    transition: all .5s ease;
+}
+
+.item1:hover div {
+    transform: translateY(-10px);
+}
+
+.item1:hover p {
+    color: #3391e8;
+}
+
+.header1>.divUl1>.line {
+    width: 1px;
+    height: 150px;
+    background-image: linear-gradient(to top, #dcfff5, #dcfff5, #c3e6f6, #dcfff5, #dcfff5);
+}
+
+.header2 {
+    background-color: #F8FBFE;
+}
+
+/* 羚胜体育介绍 */
+.sports {
+    width: 1200px;
+    margin: 0 auto;
+    height: 455px;
+    padding-top: 76px;
+    border-bottom: 1px solid rgb(238, 238, 238);
+}
+
+.sportsDiv1 {
+    width: 360px;
+    height: 424px;
+    float: left;
+}
+
+.sportsDiv1>h1 {
+    margin-bottom: 32px;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.sportsD1 {
+    width: 261px;
+    height: 281px;
+    background: url(../img/computer.3acbdcee.png) no-repeat;
+    background-size: 100%;
+    margin-top: 32px;
+    margin-left: 100px
+}
+
+.sportsD1>img {
+    width: 176px;
+    height: 232px;
+    transform: translateX(55px);
+    transition: all 0.5s;
+
+}
+
+.sportsD1:hover img {
+    transform: translateX(20px);
+}
+
+/* 体育赛事整体解决方案——羚胜体育 */
+.sportsDiv2 {
+    width: 720px;
+    height: 424px;
+    float: right;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.p {
+    font-size: 24px;
+    margin-bottom: 16px
+}
+
+.a {
+    color: #29a1e2;
+    text-decoration: underline;
+}
+
+.span {
+    font-size: 14px;
+    line-height: 28px;
+}
+
+.header2 .item1 {
+    width: 140px;
+    height: 100px;
+    float: left;
+    margin: 50px 45px 0 45px;
+    text-align: center;
+}
+
+.header2 .line {
+    width: 1px;
+    height: 150px;
+    float: left;
+    background-image: linear-gradient(to top, #dcfff5, #dcfff5, #c3e6f6, #dcfff5, #dcfff5);
+}
+
+/* 了解智慧征地平台 */
+.remove {
+    width: 1200px;
+    margin: 0 auto;
+    height: 375px;
+    margin-top: 77px;
+    padding-bottom: 12px;
+}
+
+.removeDiv1 {
+    width: 720px;
+    height: 375px;
+    float: left;
+}
+
+.removeDiv2 {
+    width: 360px;
+    height: 375px;
+    float: right;
+}
+
+/* .remove .item1 {
+    width: 120px;
+} */
+
+.removeDiv2>h1 {
+    margin-bottom: 32px;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.removeD2 {
+    width: 360px;
+    height: 260px;
+    background: url(../img/LandBg1.5a33e3f5.png) no-repeat;
+    background-size: 100%;
+    margin-left: -50px;
+    margin-top: 20px;
+}
+
+.removeD2>img {
+    width: 100px;
+    height: 132px;
+    transition: all 0.5s;
+    transform: translateX(240px);
+}
+
+.removeD2:hover img {
+    transform: translateX(200px);
+}
+
+/* 反转图 */
+.swiper2 .swiper-slide {
+    margin-top: 147px;
+    width: 1200px;
+    height: 457px;
+    float: left;
+}
+
+/* 设置item2属性 */
+.swiper2 .swiper-slide .item2 {
+    width: 189px;
+    height: 96px;
+    box-shadow: 0px 0px 5px 3px rgba(53, 53, 53, 0.25);
+    border-radius: 5px;
+    float: left;
+    line-height: 96px;
+    text-align: center;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+/* 隐藏item2 img图片 */
+/* .swiper2 .item2:hover img {
+   display: none;
+} */
+/* 隐藏item2 里的div */
+/* .swiper2 .swiper-slide .item2>div {
+    color: white;
+    border-radius: 5px;
+    display: none;
+    transition: all 0.5s;
+} */
+
+
+/* 悬浮item2 里的div */
+/* .swiper2 .swiper-slide .item2:hover div {
+    display: block;
+    background-image: linear-gradient(135deg, #25A6E1, #61F9CD);
+} */
+
+/* 隐藏item2 img图片 */
+.swiper2 .item2 img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 1s ease;
+}
+
+.swiper2 .item2:hover img {
+    opacity: 0;
+}
+
+.swiper2 .swiper-slide .item2>div {
+    color: white;
+    border-radius: 5px;
+    opacity: 0;
+}
+
+.swiper2 .swiper-slide .item2:hover div {
+    opacity: 1;
+    background-image: linear-gradient(135deg, #25A6E1, #61F9CD);
+}
+
+.swiper2 .reversalUl1 .item2 {
+    margin-left: 10px;
+    margin-bottom: 13px;
+}
+
+.swiper2 .reversalUl2 .item2 {
+    margin-left: 40px;
+    font-size: 14px;
+}
+
+/* 设置控住方向箭头样式 */
+.swiper2>.swiper-button-prev {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .2);
+    transform: translate(-70px, 40px);
+
+}
+
+.swiper2>.swiper-button-next {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .2);
+    transform: translate(75px, 40px);
+}
+
+/* 近期动态 */
+.dynamic {
+    width: 1200px;
+    height: 367px;
+    padding: 64px 0;
+
+}
+
+.dynamicDiv1 {
+    width: 696px;
+    height: 376px;
+    float: left;
+}
+
+.dynamicDiv1>div {
+    width: 224px;
+    height: 216px;
+    padding: 28px;
+    background-image: linear-gradient(135deg, #25A6E1, #61F9CD);
+    color: white;
+    float: left;
+}
+
+.dynamicDiv1>p {
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+
+.dynamicDiv1>div>p {
+    font-size: 22px;
+    line-height: 36px;
+}
+
+.dynamicDiv1>div>div>span {
+    font-size: 14px;
+}
+
+
+.dynamicDiv1>div>img {
+    width: 50px;
+    height: 20px;
+    position: relative;
+    left: 100px;
+    bottom: -80px;
+    transition: all 1s;
+}
+
+.dynamicDiv1>div:nth-of-type(1):hover img {
+    transform: translateX(-20px);
+}
+
+#span {
+    font-size: 18px;
+    position: relative;
+    left: -115px;
+    bottom: -100px;
+}
+
+.dynamic>img {
+    width: 416px;
+    height: 272px;
+    float: left;
+}
+
+.dynamicDiv2 {
+    width: 419px;
+    height: 376px;
+    float: right;
+}
+
+.dynamicDiv2>a:nth-of-type(1) {
+    font-size: 18px;
+    float: right;
+    margin-right: 12px;
+}
+
+.dynamicDiv2>a>img {
+    width: 7px;
+    margin-left: 12px;
+    position: relative;
+    top: 2px;
+    right: 8px;
+    transition: all 0.5s;
+}
+
+.dynamicDiv2>div {
+    margin-top: 70px;
+}
+
+.dynamicDiv2>a:nth-of-type(1):hover img {
+    transform: translateX(10px);
+}
+
+.dynamicDiv2>div>div>a {
+    font-size: 18px;
+}
+
+.dynamicDiv2>div>div:hover a {
+    text-decoration: underline;
+    color: #25A6E1;
+}
+
+.dynamicDiv2>div>div>span {
+    font-size: 14px;
+    color: #999;
+    margin-top: 12px;
+    display: block;
+}
+
+.dynamicDiv2>div>div {
+    margin-top: 48px;
+}

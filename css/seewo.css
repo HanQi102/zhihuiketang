@@ -1,0 +1,410 @@
+.nav ul>li:nth-of-type(5) a {
+    color: rgb(100, 100, 238) !important;
+}
+
+/* 向上动画 */
+.contentDiv1,
+.contentDiv1 {
+    animation: contentDiv2 1s forwards;
+}
+
+@keyframes contentDiv2 {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(-100px);
+    }
+}
+
+/* 背景图片 */
+.mainImg {
+    width: 100%;
+    min-width: 1200px;
+    height: 492px;
+    background-image: url(../img/u1767.png);
+    background-repeat: no-repeat;
+    padding-top: 80px;
+    overflow: hidden;
+}
+
+/* 版心 */
+.content {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    top: 0;
+}
+
+/*智慧课堂 */
+.contentDiv1 {
+    position: absolute;
+    top: -270px;
+    left: 0px;
+    overflow: hidden;
+}
+
+.contentDiv1>h1 {
+    font-size: 50px;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.contentDiv1>p {
+    color: white;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+.contentDiv1>a {
+    width: 88px;
+    height: 32px;
+    color: white;
+    font-size: 14px;
+    line-height: 32px;
+    text-align: center;
+    margin-top: 10px;
+    display: inline-block;
+    margin-left: 16px;
+}
+
+.contentDiv1>a:nth-of-type(1) {
+    background-image: linear-gradient(135deg, #25A6E1, #61F9CD);
+}
+
+.contentDiv1>a:nth-of-type(2) {
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+
+.content1 {
+    height: 162px;
+    background: url(../img/websiteBg.eb32a467.jpg) no-repeat;
+    overflow: hidden;
+}
+
+.contentDiv2 {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    top: 0;
+}
+
+.contentDiv2 .item1 {
+    color: white;
+    float: left;
+    margin-left: 175px;
+}
+
+.contentDiv2 .item1:nth-of-type(1) {
+    margin-left: 0px;
+}
+
+.contentDiv2 .item1>div {
+    width: 32px;
+    height: 4px;
+    background: #6fc;
+    margin-top: 35px;
+    margin-bottom: 13px;
+}
+
+.contentDiv2 .item1>span {
+    font-size: 16px;
+    line-height: 32px;
+}
+
+.contentDiv2 .item1>p {
+    font-size: 32px;
+}
+
+.content2 {
+    background: url(../img/features.30cee631.jpg) no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+
+/* 我们的优势 */
+.contentDiv3 {
+    width: 1200px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.contentDiv3>p {
+    font-size: 32px;
+    text-align: center;
+    margin-top: 48px;
+}
+
+.item2 {
+    width: 33.2%;
+    height: 180px;
+    float: left;
+    text-align: center;
+    padding: 52px 0 90px 0;
+}
+
+.item2 img {
+    width: 60px;
+    height: 60px;
+}
+
+.item2 img:nth-of-type(2) {
+    display: none;
+    transform: translateX(169px);
+}
+
+.item2:hover img:nth-of-type(2) {
+    display: block;
+}
+
+.item2:hover img:nth-of-type(1) {
+    display: none;
+}
+
+/* 鼠标悬浮图标向上过渡 */
+.item2>div {
+    height: 65px;
+    transition: all .6s ease;
+}
+
+.item2:hover div {
+    transform: translateY(-10px);
+}
+
+.item2:hover p {
+    color: #3391e8;
+}
+
+.item2>p {
+    color: #333;
+    margin: 8px 0;
+}
+
+.item2>span {
+    font-size: 14px;
+    color: #666;
+    line-height: 28px;
+    display: block;
+    padding: 0 30px;
+    text-align: left;
+}
+
+.itemDiv>.more {
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    bottom: -4%;
+    left: 48%;
+    text-align: center;
+    /* 鼠标悬浮时出现小手样式 */
+    cursor: pointer;
+    font-size: 12px;
+
+}
+
+.itemDiv>.more>p {
+    opacity: 0;
+    transition: all .5s ease;
+}
+
+.itemDiv>.more:hover p {
+    opacity: 1;
+}
+
+.itemDiv>.active {
+    display: none;
+}
+
+.content3 {
+    width: 100%;
+    background: #fff;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    padding: 32px 0 32px 0;
+    position: sticky;
+    top: 0px;
+    z-index: 5;
+    opacity: 0.8;
+    transform: translateY(63px);
+}
+
+.contentDiv4 {
+    width: 1200px;
+    margin: 0 auto;
+    height: 48px;
+
+}
+
+.contentDiv4>div {
+    float: left;
+}
+
+.contentDiv4>.item3 {
+    width: 260px;
+    height: 48px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.contentDiv4>.item3>img {
+    width: 48px;
+    height: 48px;
+}
+
+.contentDiv4>.line {
+    width: 2px;
+    height: 45px;
+    background: #eee;
+    margin: 0 100px;
+}
+
+.contentDiv4>.item3>div {
+    display: inline-block;
+    margin-left: 8px;
+}
+
+.item3 img:nth-of-type(2) {
+    display: none;
+}
+
+.item3:hover img:nth-of-type(2) {
+    display: block;
+    display: inline-block;
+}
+
+.item3:hover img:nth-of-type(1) {
+    display: none;
+}
+
+.contentDiv4>.item3>div>p {
+    font-size: 24px;
+    color: #999;
+    margin-bottom: -8px;
+    transition: all .5s ease;
+}
+
+.item3:hover div>p {
+    color: black;
+    transform: translateY(-12px);
+}
+
+.item3>div>span {
+    display: block;
+    transform: translateY(15px);
+    transition: all .5s ease;
+    font-size: 14px;
+}
+
+.item3:hover span {
+    transform: translateY(-5px);
+}
+
+
+.content4 {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.contentDiv5 {
+    margin-top: 95px;
+    display: none;
+}
+
+/* 默认第一个显示 */
+.active1 {
+    display: block;
+}
+
+/* 动画 */
+.contentDiv5 {
+    animation: active 1s;
+}
+
+@keyframes active {
+    0% {
+
+        transform: rotateX(0);
+    }
+
+    50% {
+        opacity: 0.3;
+        transform: rotateY(90deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+.contentDiv5>.itemDiv1>p {
+    font-size: 32px;
+    line-height: 64px;
+    text-align: center;
+}
+
+.contentDiv5>.itemDiv1>span {
+    display: block;
+    font-size: 16px;
+    text-align: center
+}
+
+.contentDiv5>.itemDiv1,
+.contentDiv5>.itemDiv2 {
+    margin-bottom: 32px;
+}
+
+.contentDiv5>.itemDiv1>img {
+    margin-top: 32px;
+}
+
+.contentDiv5>.itemDiv2>.left {
+    width: 40%;
+    float: left;
+    margin-top: 120px;
+    margin-right: 80px;
+}
+
+.contentDiv5>.itemDiv2>.left>p {
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+
+.contentDiv5>.itemDiv2>.left>p:nth-of-type(2) {
+    margin-top: 36px;
+}
+
+.contentDiv5>.itemDiv2>.left>span {
+    font-size: 14px;
+    line-height: 28px;
+}
+
+
+.contentDiv5>.itemDiv2>.right {
+    width: 40%;
+    float: right;
+    margin-top: 200px;
+    margin-left: 80px;
+}
+
+.contentDiv5>.itemDiv2>.right>p {
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+
+.contentDiv5>.itemDiv2>.right>p:nth-of-type(2) {
+    margin-top: 36px;
+}
+
+.contentDiv5>.itemDiv2>.right>span {
+    font-size: 14px;
+    line-height: 28px;
+}

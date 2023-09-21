@@ -1,0 +1,356 @@
+.nav ul>li:nth-of-type(3) a {
+    color: rgb(100, 100, 238) !important;
+}
+
+
+/* 背景图片 */
+.mainImg {
+    width: 100%;
+    min-width: 1200px;
+    height: 492px;
+    background-image: url(../img/aboutUsBg.png);
+    background-repeat: no-repeat;
+    padding-top: 80px;
+    overflow: hidden;
+}
+
+/* 向上动画 */
+.contentDiv2,
+.contentDiv1 {
+    animation: contentDiv2 1s forwards;
+}
+
+@keyframes contentDiv2 {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(-100px);
+    }
+}
+
+/* 版心 */
+.content {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    top: 0;
+}
+
+/* 右边图片 */
+.contentDiv1>img {
+    width: 500px;
+    height: 465px;
+    position: absolute;
+    top: -360px;
+    left: 680px;
+}
+
+/* 左边 以技术驱动业务 */
+.contentDiv2 {
+    position: absolute;
+    top: -300px;
+    left: 0px;
+}
+
+.contentDiv2>h1 {
+    font-size: 50px;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.contentDiv2>p {
+    color: white;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+
+.contentDiv2>a>div {
+    width: 90px;
+    height: 36px;
+    color: white;
+    font-size: 16px;
+    line-height: 36px;
+    text-align: center;
+    margin-top: 10px;
+    border: 1px solid white;
+}
+
+.contentDiv2>a>div:hover {
+    background-color: rgba(255, 255, 255, 0.367);
+}
+
+.contentDiv3 {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #F1F7FD;
+}
+
+.contentDiv3>div {
+    padding: 36px 0;
+    width: 214px;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    float: left;
+    margin-left: 32px;
+}
+
+.contentDiv3>div:first-child {
+    margin-left: 0;
+
+}
+
+.contentDiv3>div>div {
+    width: 34px;
+    border-top: 1px solid #1f9ee3;
+    margin: 14px 0;
+}
+
+.contentDiv3>div>span {
+    font-size: 14px;
+    line-height: 28px;
+}
+
+.contentDiv3>div>img {
+    display: block;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    bottom: -5px;
+    right: -5px;
+    opacity: .1;
+    transition: all .6s ease;
+}
+
+.contentDiv3>div:hover img {
+    transform: scale(1.5);
+}
+
+
+/* 羚胜体育介绍 */
+.contentDiv4 {
+    width: 1200px;
+    margin: 0 auto;
+    height: 407px;
+    padding: 76px 0 32px 0;
+    background-color: #F8FBFE;
+}
+
+.contentDiv4Left {
+    width: 360px;
+    height: 424px;
+    float: left;
+}
+
+.contentDiv4Left>h1 {
+    margin-bottom: 32px;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.sportsD1 {
+    width: 261px;
+    height: 281px;
+    background: url(../img/computer.3acbdcee.png) no-repeat;
+    background-size: 100%;
+    margin-top: 32px;
+    margin-left: 100px
+}
+
+.sportsD1>img {
+    width: 176px;
+    height: 232px;
+    transform: translateX(55px);
+    transition: all 0.5s;
+}
+
+.sportsD1:hover img {
+    transform: translateX(20px);
+}
+
+/* 体育赛事整体解决方案——羚胜体育 */
+.contentDiv4Right {
+    width: 720px;
+    float: right;
+    padding-top: 100px;
+}
+
+.contentDiv4Right>.p {
+    font-size: 24px;
+    margin-bottom: 16px
+}
+
+.contentDiv4Right>.a {
+    color: #29a1e2;
+    text-decoration: underline;
+}
+
+.contentDiv4Right>.span {
+    font-size: 14px;
+    line-height: 28px;
+}
+
+/* 功能介绍 */
+.contentDiv5 {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.contentDiv5>.itemDiv {
+    height: 734px;
+    padding: 32px 0;
+}
+
+.contentDiv5>p {
+    font-size: 32px;
+    text-align: center;
+    margin-top: 48px;
+}
+
+.item1 {
+    width: 33.2%;
+    height: 180px;
+    float: left;
+    text-align: center;
+    padding: 32px 0;
+}
+
+.item1 img {
+    width: 60px;
+    height: 60px;
+}
+
+/* 鼠标悬浮图标向上过渡 */
+.item1>div {
+    transition: all .6s ease;
+}
+
+.item1:hover div {
+    transform: translateY(-10px);
+}
+
+.item1:hover p {
+    color: #3391e8;
+}
+
+.item1>p {
+    color: #333;
+    margin: 8px 0;
+}
+
+.item1>span {
+    font-size: 14px;
+    color: #666;
+    line-height: 28px;
+    display: block;
+    padding: 0 30px;
+}
+
+.contentDiv6 {
+    background: url(../img/websiteBg.eb32a467.jpg);
+    background-size: cover;
+}
+
+.contentDiv6>.contentDiv {
+    width: 1200px;
+    height: 462px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.contentDiv6>.contentDiv>.left {
+    width: 471px;
+    height: 336px;
+    color: #fff;
+    float: left;
+    margin-top: 50px;
+}
+
+.contentDiv6>.contentDiv>.left>p {
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+
+.contentDiv6>.contentDiv>.left>span {
+    display: block;
+    margin-bottom: 30px;
+    line-height: 28px;
+}
+
+.contentDiv6>.contentDiv>.right {
+    width: 729px;
+    height: 215px;
+    margin-top: 121px;
+    color: #fff;
+    float: left;
+
+}
+
+.contentDiv6>.contentDiv>.right>p {
+    font-size: 24px;
+}
+
+.contentDiv6>.contentDiv>.right>span {
+    display: block;
+    font-size: 14px;
+    margin: 25px 0;
+}
+
+.contentDiv6>.contentDiv>.right>a {
+    display: block;
+    width: 88px;
+    border: 1px solid #fff;
+    text-align: center;
+    line-height: 28px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+}
+
+.contentDiv6>.contentDiv>.right>a:hover {
+    background-color: rgba(255, 255, 255, 0.36);
+}
+
+.contentDiv7 {
+    background: url(../img/webSiteBg2.0f47f9b4.png);
+    background-size: cover;
+    height: 256px;
+    overflow: hidden;
+}
+
+.contentDiv7>.contentDiv {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.contentDiv7 .bigDiv {
+    margin-top: 78px;
+}
+
+.contentDiv7 .bigDiv>p {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.contentDiv7 .bigDiv>span {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.contentDiv7 .bigDiv>.smallDiv {
+    width: 88px;
+    border: 1px solid #333;
+    text-align: center;
+    line-height: 28px;
+    cursor: pointer;
+    font-size: 14px;
+}

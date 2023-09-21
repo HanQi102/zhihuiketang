@@ -1,0 +1,359 @@
+.nav ul>li:nth-of-type(2) a {
+    color: rgb(100, 100, 238) !important;
+}
+
+.mainImg {
+    width: 100%;
+    min-width: 1200px;
+    height: 492px;
+    background-image: url(../img/aboutUsBg.png);
+    background-repeat: no-repeat;
+    padding-top: 80px;
+    overflow: hidden;
+}
+
+
+.content {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    top: 0;
+}
+
+/* 向上动画 */
+.contentDiv2,
+.contentDiv1 {
+    animation: contentDiv2 1s forwards;
+}
+
+@keyframes contentDiv2 {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+
+
+    100% {
+        opacity: 1;
+        transform: translateY(-100px);
+    }
+}
+
+/* 右边图片 */
+.contentDiv1 {
+    position: absolute;
+    top: -500px;
+    left: 680px;
+}
+
+.contentDiv1>div {
+    width: 712px;
+    height: 496px;
+    background: url(../img/aboutUsIMG.png);
+    position: absolute;
+    top: 0px;
+    right: -50px;
+}
+
+/* 左边 以技术驱动业务 */
+.contentDiv2 {
+    position: absolute;
+    top: -300px;
+    left: 0px;
+}
+
+.contentDiv2>h1 {
+    font-size: 50px;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.contentDiv2>p {
+    color: white;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+/* 了解我们的项目 */
+.contentDiv3 {
+    text-align: center;
+    font-size: 32px;
+    margin-top: 64px;
+    /* overflow: hidden; */
+}
+
+/* 七个图标 */
+.contentDiv4 {
+    height: 112px;
+}
+
+.item1 {
+    width: 240px;
+    height: 112px;
+    float: left;
+    text-align: center;
+    margin-top: 18px;
+}
+
+.item1 img {
+    width: 47px;
+    height: 47px;
+    margin-bottom: 18px;
+    display: block;
+    margin-left: 96px;
+}
+
+.item1 img:nth-of-type(2) {
+    display: none;
+}
+
+.item1:hover img:nth-of-type(2) {
+    display: block;
+}
+
+.item1:hover img:nth-of-type(1) {
+    display: none;
+}
+
+.icon>img:nth-of-type(1) {
+    display: none;
+}
+
+.icon>img:nth-of-type(2) {
+    display: block;
+}
+
+/* 鼠标悬浮图标向上过渡 */
+.item1>div {
+    width: 240px;
+    height: 65px;
+    transition: all .5s ease;
+}
+
+.item1:hover div {
+    transform: translateY(-10px);
+}
+
+.item1:hover p {
+    color: #3391e8;
+}
+
+.active {
+    border-bottom: 3px solid #3391e8;
+}
+
+/* 七个图标 介绍 动画 */
+.active1 {
+    animation: active 1s;
+}
+
+@keyframes active {
+    0% {
+
+        transform: rotateX(0);
+    }
+
+    50% {
+        opacity: 0.3;
+        transform: rotateX(90deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+/* 关于七个图标的介绍  */
+.contentDiv5 {
+    width: 1200px;
+    overflow: hidden;
+}
+
+/* 关于七个图标的介绍全部隐藏  */
+.contentDiv5>.item2 {
+    background-color: #f1f7fd;
+    float: left;
+    display: none;
+    padding: 24px 0;
+}
+
+/* 关于七个图标的介绍默认第一个显示 */
+.contentDiv5>.item2:first-child {
+    display: block;
+}
+
+/* 介绍的左边图片部分 */
+.item2Left {
+    float: left;
+}
+
+.item2Left>img {
+    width: 320px;
+    height: 273px;
+}
+
+/* 介绍的左边主体部分 */
+.item2Right {
+    width: 873px;
+    float: left;
+}
+
+/* 介绍的主体部分 */
+.contentDiv5 .item2Right>div:nth-of-type(2n) {
+    color: #808080;
+    margin-left: 40px;
+    padding: 12px 33px;
+    font-size: 14px;
+    border-left: 1px solid #3391e8;
+    line-height: 28px;
+}
+
+.contentDiv5 .item2Right>div:last-child {
+    border-left: none;
+}
+
+/* 介绍的图表部分 */
+.contentDiv5 .item2Right>div:nth-of-type(2n-1) {
+    position: relative;
+    top: 0px;
+    left: 18px;
+}
+
+.contentDiv5 .item2Right>div>p {
+    font-size: 24px;
+    position: absolute;
+    top: 3px;
+    left: 60px;
+}
+
+/* span 下外边距 */
+#span1 {
+    display: block;
+    margin-bottom: 36px;
+}
+
+.contentDiv6 {
+    /* overflow: hidden; */
+    height: 133px;
+}
+
+/* 轮播图 */
+.swiper {
+    /* 分页器颜色 */
+    --swiper-pagination-color: #fdfdfd;
+    /* 按钮颜色 */
+    --swiper-navigation-color: #ffffff;
+    /* 单独设置按钮颜色 */
+    --swiper-navigation-size: 15px;
+    /* 设置按钮大小 */
+    background: url(../img/websiteBg.eb32a467.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+
+.swiper-slide>div {
+    width: 1200px;
+    height: 462px;
+    margin: 0 auto;
+}
+
+.swiper-slide .left {
+    width: 471px;
+    height: 336px;
+    color: #fff;
+    float: left;
+    margin-top: 50px;
+}
+
+.swiper-slide .left>p {
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+
+.swiper-slide .left>span {
+    display: block;
+    margin-bottom: 30px;
+    line-height: 28px;
+}
+
+.swiper-slide .right {
+    width: 729px;
+    height: 215px;
+    margin-top: 121px;
+    color: #fff;
+    float: left;
+
+}
+
+.swiper-slide .right>p {
+    font-size: 24px;
+}
+
+.swiper-slide .right>span {
+    display: block;
+    font-size: 14px;
+    margin: 25px 0;
+}
+
+.swiper-slide .right>a {
+    display: block;
+    width: 88px;
+    border: 1px solid #fff;
+    text-align: center;
+    line-height: 28px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+}
+
+.swiper-slide .right>a:hover {
+    background-color: rgba(255, 255, 255, 0.36);
+}
+
+/* 设置控住方向箭头样式 */
+.swiper>.swiper-button-prev {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.swiper>.swiper-button-next {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+/* 箭头悬浮显示 */
+.swiper .hide {
+    opacity: 0;
+    transition: all .5s;
+}
+
+.swiper:hover .swiper-button-next {
+    opacity: 1;
+    transition: all .5s;
+    transform: translateX(-10px);
+}
+
+.swiper:hover .swiper-button-prev {
+    opacity: 1;
+    transition: all .5s;
+    transform: translateX(10px);
+}
+
+/* 分页器设置长条 */
+.swiper .my-bullet {
+    display: inline-block;
+    width: 30px;
+    height: 2px;
+    margin-left: 8px;
+    background-color: #e1effbde;
+}
+
+.swiper .my-bullet-active {
+    background-color: white;
+}
